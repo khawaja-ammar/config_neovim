@@ -2,6 +2,7 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set number relativenumber")
 vim.g.mapleader = " "
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -31,7 +32,7 @@ local plugins = {
     end,
   },
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
       local builtin = require("telescope.builtin")
@@ -50,7 +51,20 @@ local plugins = {
         indent = { enable = true },  
       })
     end
-  }
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 }
 local opts = {}
 
