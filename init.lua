@@ -24,12 +24,28 @@ local plugins = {
     lazy = false,
     priority = 1000,
     config = function()
-      require('github-theme').setup({
-        -- ...
-      })
-  
+      require('github-theme').setup()
       vim.cmd('colorscheme github_dark_default')
     end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim", main = "ibl",
+    config = function()
+      require("ibl").setup()
+    end
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    requires = { "nvim-tree/nvim-web-devicons", opt = true },
+    config = function()
+      require("lualine").setup()
+    end
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end
   },
   {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
@@ -53,17 +69,8 @@ local plugins = {
     end
   },
   {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-    end
-  },
-  {
     "kdheepak/lazygit.nvim",
-    -- optional for floating window border decoration
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
 }
 local opts = {}
