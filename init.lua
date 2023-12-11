@@ -18,6 +18,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 local plugins = {
   -- UI/UX -----------------------------------------------------
   {
@@ -48,7 +49,7 @@ local plugins = {
       require("gitsigns").setup()
     end
   },
-  -- CORE ------------------------------------------------------
+  -- CORE EXT ---------------------------------------------------
   {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
     dependencies = { 'nvim-lua/plenary.nvim' },
