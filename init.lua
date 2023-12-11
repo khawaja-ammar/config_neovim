@@ -66,19 +66,22 @@ local plugins = {
       config.setup({
         ensure_installed = {"lua", "javascript", "typescript", "tsx", "astro", "css", "gitignore", "go","html", "json", "python","rust", "sql"},
         highlight = { enable = true },
-        indent = { enable = true },  
+        indent = { enable = true },
+        autotag = { enable = true },
+	      endwise = { enable = true},
       })
     end
   },
+  -- CORE:Treesitter Ext ---------------------------------------
+  { "windwp/nvim-ts-autotag" },
+  { "RRethy/nvim-treesitter-endwise" },
   -- EXT -------------------------------------------------------
   {
-    "windwp/nvim-ts-autotag",
+    "altermo/ultimate-autopair.nvim", 
+    event = {'InsertEnter', 'CmdlineEnter'},
     config = function()
-      require("nvim-ts-autotag").setup()
+      require("ultimate-autopair").setup()
     end
-  },
-  {
-    "cohama/lexima.vim"
   },
   -- INTEGRATIONS ----------------------------------------------
   {
