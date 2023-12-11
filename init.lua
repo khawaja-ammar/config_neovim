@@ -19,6 +19,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+  -- UI/UX -----------------------------------------------------
   {
     'projekt0n/github-nvim-theme',
     lazy = false,
@@ -47,6 +48,7 @@ local plugins = {
       require("gitsigns").setup()
     end
   },
+  -- CORE ------------------------------------------------------
   {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
     dependencies = { 'nvim-lua/plenary.nvim' },
@@ -68,6 +70,17 @@ local plugins = {
       })
     end
   },
+  -- EXT -------------------------------------------------------
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end
+  },
+  {
+    "cohama/lexima.vim"
+  },
+  -- INTEGRATIONS ----------------------------------------------
   {
     "kdheepak/lazygit.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
