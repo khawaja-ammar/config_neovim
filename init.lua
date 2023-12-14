@@ -46,7 +46,21 @@ local plugins = {
   {
     "lewis6991/gitsigns.nvim",
     config = function()
-      require("gitsigns").setup()
+      require("gitsigns").setup({
+        current_line_blame_formatter = '<author>, <author_time:%d-%m-%Y> - <summary>',
+        on_attach = function(bufnr)
+          local gs = package.loaded.gitsigns
+          vim.keymap.set('n', '<leader>gb', gs.toggle_current_line_blame)
+          vim.keymap.set('n', '<leader>gd', gs.preview_hunk)
+        end
+      })
+      require("which-key").register({
+        g = {
+          name = "Git",
+          b = {"Git Blame Toggle"},
+          d = {"Git Diff"},
+        }
+      }, { prefix = "<leader>" })
     end
   },
   -- CORE EXT ---------------------------------------------------
@@ -56,7 +70,16 @@ local plugins = {
     config = function()
       local builtin = require("telescope.builtin")
       vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+      vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
       vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+      
+      require("which-key").register({
+        f = {
+          name = "Find",
+          f = {"Find File"},
+          g = {"Find Item (Grep)"},
+        }
+      }, { prefix = "<leader>" })
     end
   },
   {
@@ -105,7 +128,15 @@ local plugins = {
     end
   },
   -- EXT -------------------------------------------------------
-  
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+    opts = {}
+  }, 
   -- INTEGRATIONS ----------------------------------------------
   {
     "kdheepak/lazygit.nvim",
@@ -113,6 +144,13 @@ local plugins = {
     config = function()
       require("telescope").load_extension("lazygit")
       vim.keymap.set('n', '<leader>gg', ':LazyGitCurrentFile<CR>', { noremap = true, silent = true })
+      
+      require("which-key").register({
+        g = {
+          name = "Git",
+          g = {"Open LazyGit"},
+        }
+      }, { prefix = "<leader>" })
     end
   },
 }
