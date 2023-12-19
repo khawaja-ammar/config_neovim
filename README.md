@@ -20,6 +20,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- REPLACE ultimate auto pair (with what?)
+- editor word wrap (alt+z)
+- harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - nvim-ufo (folding lines/funcs)
 - todo-comments
 - LuaSnip + friendlysnippets

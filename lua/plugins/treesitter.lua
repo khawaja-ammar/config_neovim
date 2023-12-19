@@ -29,6 +29,7 @@ return {
         "markdown",
         "markdown_inline",
         "regex",
+        "yaml",
       },
       highlight = { enable = true },
       indent = { enable = true },
