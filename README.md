@@ -2,6 +2,22 @@
 
 Basic neovim config experimenting with different plugins
 
+
+# Interesting Plugins
+
+- nvim-ufo (folding lines/funcs)
+
+
+# Keys
+
+## Normal Mode
+
+## Command Mode
+
+## Insert Mode
+
+## Visual Mode
+
 # Keybinds
 
 ## <C->
