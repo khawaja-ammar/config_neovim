@@ -10,7 +10,7 @@ return {
   config = function()
     require("telescope").load_extension('fzf')
     local builtin = require("telescope.builtin")
-    vim.keymap.set('n', '<C-p>', builtin.git_files, { noremap = true, silent = true })
+    vim.keymap.set('n', '<C-p>', builtin.find_files, { noremap = true, silent = true })
     vim.keymap.set('n', '<leader>pf', builtin.find_files, { noremap = true, silent = true })
     vim.keymap.set('n', '<leader>ps', builtin.live_grep, { noremap = true, silent = true })
 

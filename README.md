@@ -6,7 +6,8 @@ Basic neovim config experimenting with different plugins
 # Interesting Plugins
 
 - nvim-ufo (folding lines/funcs)
-
+- todo-comments
+- LuaSnip + friendlysnippets
 
 # Keys
 
