@@ -2,6 +2,12 @@
 
 Basic neovim config experimenting with different plugins using lazy plugin manager
 
+## External Tools recommeded
+
+- ripgrep
+- fs
+- tmux?
+
 ## Plugin Classifications
 
 - UI
@@ -17,6 +23,10 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - nvim-ufo (folding lines/funcs)
 - todo-comments
 - LuaSnip + friendlysnippets
+- Explorer:
+    - telescope file browser
+    - ranger.nvim / rnvimr
+    - oil.nvim
 
 ## Vim Keys
 
@@ -32,14 +42,16 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Custom Keybinds
 
 ### <C->
-- C-p => Git Files Explorer
-- C-_(/)  => Comment Line(s) 
+
+- C-space   => Incremental selection Treesitter (use <bs> to decrement) 
+- C-p       => Files Files
+- C-_ (/)   => Comment Line(s) 
 
 ### <leader>p(roject)
 
-- pe => Project Explorer
-- pf => Project Files
-- ps => Project Grep search
+- pe        => Project Explorer
+- pf        => Project Files
+- ps        => Project Grep search
 
 ### <leader>g(it)
 
