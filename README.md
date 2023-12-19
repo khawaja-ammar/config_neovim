@@ -30,13 +30,24 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Vim Keys
 
+### Insert Mode
+
 ### Normal Mode
 
 ### Visual Mode
 
 ### Command Mode
 
-### Insert Mode
+Command mode is started by pressing ":" and typing the command
+
+- :q    => Quit
+- :q!   => Force quit
+- :w    => Write file
+- :wq   => Write file + quit
+- :wa   => Write all files in buffer
+- :wqa  => Write all files in buffer and quit
+
+- :Ex   => Open vim explorer
 
 
 ## Custom Keybinds
