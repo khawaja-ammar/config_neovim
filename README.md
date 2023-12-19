@@ -1,35 +1,45 @@
 # Neovim Config
 
-Basic neovim config experimenting with different plugins
+Basic neovim config experimenting with different plugins using lazy plugin manager
 
+## Plugin Classifications
 
-# Interesting Plugins
+- UI
+- Editor
+- Coding
+- Formatting
+- Linting
+- LSP
+- Treesitter
+
+## Interesting Plugins
 
 - nvim-ufo (folding lines/funcs)
 - todo-comments
 - LuaSnip + friendlysnippets
 
-# Keys
+## Vim Keys
 
-## Normal Mode
+### Normal Mode
 
-## Command Mode
+### Visual Mode
 
-## Insert Mode
+### Command Mode
 
-## Visual Mode
+### Insert Mode
 
-# Keybinds
 
-## <C->
+## Custom Keybinds
+
+### <C->
 - C-p => Git Files Explorer
 - C-_(/)  => Comment Line(s) 
 
-## <leader>p(roject)
+### <leader>p(roject)
 
 - pe => Project Explorer
 - pf => Project Files
 - ps => Project Grep search
 
-## <leader>g(it)
+### <leader>g(it)
 
