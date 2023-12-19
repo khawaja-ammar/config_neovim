@@ -21,8 +21,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Interesting Plugins
 
 - REPLACE ultimate auto pair (with what?)
-- editor word wrap (alt+z)
+- undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
+- in-vim terminal (C-``) for running server/debudding => Maybe tmux better?
 - nvim-ufo (folding lines/funcs)
 - todo-comments
 - LuaSnip + friendlysnippets
@@ -60,6 +61,10 @@ Command mode is started by pressing ":" and typing the command
 - C-space   => Incremental selection Treesitter (use <bs> to decrement) 
 - C-p       => Files Files
 - C-_ (/)   => Comment Line(s) 
+
+### <A->
+
+- A-z       => Toggle Word wrap
 
 ### <leader>p(roject)
 
