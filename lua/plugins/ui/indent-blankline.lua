@@ -6,6 +6,7 @@ return {
         char = "│",
         tab_char = "│",
       },
+      scope = { enabled = false }
     })
   end
 }
