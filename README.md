@@ -53,24 +53,25 @@ Command mode is started by pressing ":" and typing the command
 
 - :Ex   => Open vim explorer
 
+- /     => Search
 
 ## Custom Keybinds
 
-### <C->
+### \<C->
 
 - C-space   => Incremental selection Treesitter (use <bs> to decrement) 
 - C-p       => Files Files
 - C-_ (/)   => Comment Line(s) 
 
-### <A->
+### \<A->
 
 - A-z       => Toggle Word wrap
 
-### <leader>p(roject)
+### \<leader>p(roject)
 
 - pe        => Project Explorer
 - pf        => Project Files
 - ps        => Project Grep search
 
-### <leader>g(it)
+### \<leader>g(it)
 
