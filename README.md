@@ -24,21 +24,39 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - in-vim terminal (C-``) for running server/debudding => Maybe tmux better?
+- Emoji picker
 - nvim-ufo (folding lines/funcs)
 - todo-comments
 - LuaSnip + friendlysnippets
 - Explorer:
     - telescope file browser
     - ranger.nvim / rnvimr
-    - oil.nvim
 
 ## Vim Keys
 
-### Insert Mode
-
 ### Normal Mode
 
+### Insert Mode
+
+**TO ENTER**:
+- N => 
+    - \<i>   => Insert before current character
+    - \<a>   => Insert after current character
+    - \<I>   => Insert at the beginning of current line
+    - \<A>   => Insert at the end of current line
+    - \<o>   => Create a new line after current line and insert there
+    - \<O>   => Create a new line before current line and insert there
+
+
 ### Visual Mode
+
+**TO ENTER**:
+N => \<v>
+
+### Visual LINE Mode ✨
+
+**TO ENTER**:
+N => \<V>
 
 ### Command Mode
 
