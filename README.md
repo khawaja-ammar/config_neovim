@@ -36,27 +36,44 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ### Normal Mode
 
+**TO ENTER**
+esc
+
+**MOTIONS**
+- h
+- j
+- k
+- l
+
+**OPS**
+- x     => Cut
+- y     => Yank (Copy)
+- p     => Paste
+
+- u     => Undo
+- C-r   => Redo
+
 ### Insert Mode
 
 **TO ENTER**:
 - N => 
-    - \<i>   => Insert before current character
-    - \<a>   => Insert after current character
-    - \<I>   => Insert at the beginning of current line
-    - \<A>   => Insert at the end of current line
-    - \<o>   => Create a new line after current line and insert there
-    - \<O>   => Create a new line before current line and insert there
+    - i     => Insert before current character
+    - a     => Insert after current character
+    - I     => Insert at the beginning of current line
+    - A     => Insert at the end of current line
+    - o     => Create a new line after current line and insert there
+    - O     => Create a new line before current line and insert there
 
 
 ### Visual Mode
 
 **TO ENTER**:
-N => \<v>
+N => v
 
 ### Visual LINE Mode ✨
 
 **TO ENTER**:
-N => \<V>
+N => V
 
 ### Command Mode
 
