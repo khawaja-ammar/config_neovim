@@ -37,13 +37,16 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ### Normal Mode
 
 **TO ENTER**
-esc
+- esc
+- C-c
 
 **MOTIONS**
 - h
 - j
 - k
 - l
+- gg    => Jump to Start of file
+- G     => Jump to End of file
 
 **OPS**
 - x     => Cut
@@ -89,6 +92,8 @@ Command mode is started by pressing ":" and typing the command
 - :Ex   => Open vim explorer
 
 - /     => Search
+
+- :${NUM} => Jump to Line Number (e.g :100, :50)
 
 ## Custom Keybinds
 

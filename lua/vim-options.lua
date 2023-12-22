@@ -31,9 +31,11 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 
--- vim.opt.cursorline = true
--- #161B22
-
+-- Github Theme color: #171B22
+vim.opt.cursorline = true
+vim.api.nvim_create_autocmd('ColorScheme', {
+  command = [[highlight CursorLine guibg=#171B22 ]]
+})
 -- vim.opt.colorcolumn = "80"
 
 vim.opt.completeopt = 'menuone,noselect'
