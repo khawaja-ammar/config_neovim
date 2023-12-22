@@ -9,6 +9,8 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', { noremap = true, silent = true })
 
+-- TODO: Add Alt + Up and Alt + Down to shift line and blocks
+
 require('which-key').register {
 --   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
 --   ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
