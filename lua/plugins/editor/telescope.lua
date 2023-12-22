@@ -15,17 +15,17 @@ return {
     require("telescope").load_extension('fzf')
     -- See `:help telescope.builtin`
     local builtin = require("telescope.builtin")
-    vim.keymap.set('n', '<C-p>', builtin.find_files, { noremap = true, silent = true })
-    vim.keymap.set('n', '<leader>pf', builtin.find_files, { noremap = true, silent = true })
-    vim.keymap.set('n', '<leader>ps', builtin.live_grep, { noremap = true, silent = true })
+    vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Project Files' })
+    vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = '[P]roject Files Telescope' })
+    vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject Search (Grep) Telescope' })
 
-    require("which-key").register({
-      p = {
-        name = "Project",
-        f = {"Project Files"},
-        s = {"Project Search (Grep)"},
-      }
-    }, { prefix = "<leader>" })
+    -- require("which-key").register({
+    --   p = {
+    --     name = "Project",
+    --     f = {"Project Files"},
+    --     s = {"Project Search (Grep)"},
+    --   }
+    -- }, { prefix = "<leader>" })
   end
 }
 -- NOTE:

@@ -41,12 +41,25 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - C-c
 
 **MOTIONS**
-- h
-- j
-- k
-- l
-- gg    => Jump to Start of file
-- G     => Jump to End of file
+h - move cursor left
+j - move cursor down
+k - move cursor up
+l - move cursor right 
+
+w - jump forwards to the start of a word
+W - jump forwards to the start of a word (words can contain punctuation)
+e - jump forwards to the end of a word
+E - jump forwards to the end of a word (words can contain punctuation)
+b - jump backwards to the start of a word
+B - jump backwards to the start of a word (words can contain punctuation) 
+
+% - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info) 
+
+0 - jump to the start of the line 
+$ - jump to the end of the line 
+
+gg - go to the first line of the document
+G - go to the last line of the document 
 
 **OPS**
 - x     => Cut
