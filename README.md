@@ -20,13 +20,14 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager) 
+- fugitive
 - REPLACE ultimate auto pair (with what?)
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - in-vim terminal (C-``) for running server/debudding => Maybe tmux better?
 - Emoji picker
 - nvim-ufo (folding lines/funcs)
-- todo-comments
 - LuaSnip + friendlysnippets
 - Explorer:
     - telescope file browser
