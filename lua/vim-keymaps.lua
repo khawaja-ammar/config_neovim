@@ -1,3 +1,5 @@
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
 -- Toggle wrap
 vim.keymap.set('n', '<A-z>', ':set wrap!<CR>', { noremap = true, silent = true })
 
