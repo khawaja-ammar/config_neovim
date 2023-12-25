@@ -1,3 +1,7 @@
+vim.opt.timeout = true
+vim.opt.timeoutlen = 300
+vim.opt.updatetime = 250
+
 -- Appearance
 vim.opt.termguicolors = true
 vim.opt.nu = true
@@ -38,6 +42,3 @@ vim.opt.splitbelow = true
 vim.opt.isfname:append("@-@")
 
 -- vim.opt.iskeyword:append("-")
-
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300

@@ -20,6 +20,22 @@ local lazy_opts = {
   change_detection = {
     enabled = false,
   },
+  checker = {
+    enabled = true,
+  },
+	rtp = {
+		disabled_plugins = {
+			"gzip",
+			"matchit",
+			"matchparen",
+			"netrw",
+			"netrwPlugin",
+			"tarPlugin",
+			"tohtml",
+			"tutor",
+			"zipPlugin",
+		},
+	},
 }
 
 require("vim-globals")
