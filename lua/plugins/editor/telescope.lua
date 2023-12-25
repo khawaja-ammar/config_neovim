@@ -33,6 +33,7 @@ return {
 
       vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
+      -- vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = '[V]iew [H]elp' }) NOTE: This is an alt command
     end
   },
   {

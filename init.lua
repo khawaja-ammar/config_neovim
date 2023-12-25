@@ -13,7 +13,16 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+local lazy_opts = {
+  install = {
+    theme = "github_dark_default",
+  },
+  change_detection = {
+    enabled = false,
+  },
+}
+
 require("vim-options")
 require("vim-globals")
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", lazy_opts)
 require("vim-keymaps")
