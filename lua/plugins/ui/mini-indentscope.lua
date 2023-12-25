@@ -1,6 +1,6 @@
 return {
   "echasnovski/mini.indentscope", 
-  version = false,
+  version = '*',
   config = function()
     require("mini.indentscope").setup({
       draw = {

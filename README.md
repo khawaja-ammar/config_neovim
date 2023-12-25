@@ -20,6 +20,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- Hardtime.nvim
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager) 
 - fugitive
 - REPLACE ultimate auto pair (with what?)
@@ -96,12 +97,13 @@ N => V
 
 Command mode is started by pressing ":" and typing the command
 
-- :q    => Quit
-- :q!   => Force quit
-- :w    => Write file
-- :wq   => Write file + quit
-- :wa   => Write all files in buffer
-- :wqa  => Write all files in buffer and quit
+:q - Quit
+:q! - Force quit
+:w - Write file
+:wq -  Write file + quit
+:wa - Write all files in buffer
+:wqa - Write all buffer and quit
+:bd - Close (delete) current buffer
 
 - :Ex   => Open vim explorer
 
