@@ -5,7 +5,6 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
 vim.opt.completeopt = 'menuone,noinsert,noselect'
--- Github Theme color: #171B22
 vim.opt.cursorline = true
 vim.api.nvim_create_autocmd('ColorScheme', {
   command = [[highlight CursorLine guibg=#171B22 ]]
@@ -40,7 +39,3 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
-
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "

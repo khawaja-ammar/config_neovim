@@ -13,7 +13,17 @@ return {
       },
     },
     config = function()
-      require("telescope").load_extension('fzf')
+      local telescope = require("telescope")
+      telescope.load_extension('fzf')
+
+      telescope.setup({
+        pickers = {
+          find_files = {
+            find_command = {'rg', '--files', '--iglob', '!.git', '--hidden'},
+          }
+        }
+      })
+
       -- See `:help telescope.builtin`
       local builtin = require("telescope.builtin")
       vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Project Files' })
