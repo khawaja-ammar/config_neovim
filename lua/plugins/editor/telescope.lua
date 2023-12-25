@@ -31,13 +31,8 @@ return {
       vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = '[P]roject Files Telescope' })
       vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject Search (Grep) Telescope' })
 
-      -- require("which-key").register({
-      --   p = {
-      --     name = "Project",
-      --     f = {"Project Files"},
-      --     s = {"Project Search (Grep)"},
-      --   }
-      -- }, { prefix = "<leader>" })
+      vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
+      vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
     end
   },
   {

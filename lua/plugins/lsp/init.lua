@@ -5,7 +5,7 @@ return {
     'williamboman/mason-lspconfig.nvim',
     -- Useful status updates for LSP
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-    -- { 'j-hui/fidget.nvim', opts = {} },
+    { 'j-hui/fidget.nvim', opts = {} },
 
     -- Additional lua configuration, makes nvim stuff amazing!
     -- 'folke/neodev.nvim',
@@ -14,15 +14,17 @@ return {
     require("mason").setup({
       ui = {
         icons = {
-          package_pending = " ",
-          package_installed = "󰄳 ",
-          package_uninstalled = " 󰚌",}
-      }
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗"
+        }}
     })
 
     require("mason-lspconfig").setup({
       ensure_installed = { "lua_ls" }
     })
+
+    -- require('neodev').setup()
 
     local lspconfig = require("lspconfig")
     lspconfig.lua_ls.setup({})
