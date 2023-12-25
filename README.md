@@ -36,6 +36,8 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Vim Keys
 
+- vim marks?? how do they function?
+
 ### Normal Mode
 
 **TO ENTER**
@@ -56,13 +58,20 @@ E   - jump forwards to the end of a word (words can contain punctuation)
 b   - jump backwards to the start of a word
 B   - jump backwards to the start of a word (words can contain punctuation) 
 
-%   - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info) 
-
 0   - jump to the start of the line 
 $   - jump to the end of the line 
 
+f{c}- jump to the next occurrence of a character (i.e fx jumps to first x in the line)
+F{c}- jump back to the prev occurrence of a character (i.e fx jumps back to first x in the line)
+t{c}- 
+T{c}-
+;   - repeat previous f, t, F or T movement 
+,   - repeat previous f, t, F or T movement, backwards
+
 gg  - go to the first line of the document
 G   - go to the last line of the document 
+
+%   - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info) 
 
 **OPS**
 x   - Cut
@@ -101,42 +110,42 @@ N => C-v
 
 ### Command Mode
 
-Command mode is started by pressing ":" and typing the command
+**TO ENTER**
+N => :
 
-:q  - Quit
-:q! - Force quit
-:w  - Write file
-:wq -  Write file + quit
-:wa - Write all files in buffer
-:wqa- Write all buffer and quit
-:bd - Close (delete) current buffer
+q   - Quit
+q!  - Force quit
+w   - Write file
+wq  -  Write file + quit
+wa  - Write all files in buffer
+wqa - Write all buffer and quit
+bd  - Close (delete) current buffer
 
-:Ex - Open vim explorer
+Ex - Open vim explorer
 
-:{#}- Jump to Line Number (e.g :100, :50)
+{#}- Jump to Line Number (e.g :100, :50)
 
 ### Search Mode
 
 /   - Search
 
-
 ## Custom Keybinds
 
 ### \<C->
 
-C-sp- Incremental selection Treesitter (use <bs> to decrement) 
-C-p - Files Files
-C-_ - Comment Line(s) 
+sp- Incremental selection Treesitter (use <bs> to decrement) 
+p - Files Files
+_ - Comment Line(s) 
 
 ### \<A->
 
-A-z - Toggle Word wrap
+z - Toggle Word wrap
 
 ### \<leader>p(roject)
 
-pe  - Project Explorer
-pf  - Project Files
-ps  - Project Grep search
+e  - Project Explorer
+f  - Project Files
+s  - Project Grep search
 
 ### \<leader>g(it)
 
