@@ -22,7 +22,8 @@ local lazy_opts = {
   },
 }
 
-require("vim-options")
 require("vim-globals")
-require("lazy").setup("plugins", lazy_opts)
+require("vim-options")
 require("vim-keymaps")
+
+require("lazy").setup("plugins", lazy_opts)

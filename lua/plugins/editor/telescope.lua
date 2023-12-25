@@ -28,10 +28,11 @@ return {
       -- See `:help telescope.builtin`
       local builtin = require("telescope.builtin")
       vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Project Files' })
-      vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = '[P]roject Files Telescope' })
-      vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject Search (Grep) Telescope' })
+      vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = '[P]roject [F]iles Telescope' })
+      vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject [S]earch (Grep) Telescope' })
 
       vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
+
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       -- vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = '[V]iew [H]elp' }) NOTE: This is an alt command
     end

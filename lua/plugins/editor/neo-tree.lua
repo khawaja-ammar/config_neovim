@@ -10,14 +10,6 @@ return {
   config = function()
     -- vim.keymap.set('n', '<C-b>', ':Neotree filesystem reveal float<CR>', { noremap = true, silent = true })
     -- vim.keymap.set('n', '<leader>bb', ':Neotree filesystem action=show left reveal toggle<CR>', { noremap = true, silent = true })
-    vim.keymap.set('n', '<leader>pe', ':Neotree filesystem reveal float<CR>', { noremap = true, silent = true })
-
-    -- require("which-key").register({
-    --   p = {
-    --     name = "Project",
-    --     e = {"Project Explorer"}
-    --   }
-    -- }, { prefix = "<leader>" })
-
+    vim.keymap.set('n', '<leader>pe', ':Neotree filesystem reveal float<CR>', { desc = "[P]roject [E]xplorer" })
   end
 }

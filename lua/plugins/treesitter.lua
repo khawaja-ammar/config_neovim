@@ -1,6 +1,6 @@
 -- See `:help nvim-treesitter`
 return {
-  "nvim-treesitter/nvim-treesitter", 
+  "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   dependencies = {
     -- 'nvim-treesitter/nvim-treesitter-textobjects',
@@ -8,7 +8,7 @@ return {
   config = vim.defer_fn(function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { 
+      ensure_installed = {
         "diff", "html", "lua", "luadoc", "javascript", "jsdoc", "typescript", "tsx", "astro", "css",
         "gitignore", "go", "json", "python", "sql", "markdown", "markdown_inline", "vimdoc", "vim"
       },
