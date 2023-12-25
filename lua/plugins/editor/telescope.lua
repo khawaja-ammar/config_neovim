@@ -21,7 +21,8 @@ return {
           find_files = {
             find_command = {'rg', '--files', '--iglob', '!.git', '--hidden'},
           }
-        }
+        },
+        file_ignore_patterns = { "node_modules" },
       })
 
       -- See `:help telescope.builtin`

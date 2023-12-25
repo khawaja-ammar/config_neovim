@@ -5,10 +5,10 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
 vim.opt.completeopt = 'menuone,noinsert,noselect'
-vim.opt.cursorline = true
 vim.api.nvim_create_autocmd('ColorScheme', {
   command = [[highlight CursorLine guibg=#171B22 ]]
 })
+vim.opt.cursorline = true
 -- vim.opt.colorcolumn = "80"
 
 -- Tab / Indentation
@@ -21,7 +21,7 @@ vim.opt.breakindent = true
 vim.opt.wrap = false
 
 -- Search
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -36,6 +36,8 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 vim.opt.isfname:append("@-@")
+
+-- vim.opt.iskeyword:append("-")
 
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300

@@ -11,7 +11,15 @@ return {
     -- 'folke/neodev.nvim',
   },
   config = function()
-    require("mason").setup()
+    require("mason").setup({
+      ui = {
+        icons = {
+          package_pending = " ",
+          package_installed = "󰄳 ",
+          package_uninstalled = " 󰚌",}
+      }
+    })
+
     require("mason-lspconfig").setup({
       ensure_installed = { "lua_ls" }
     })
