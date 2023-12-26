@@ -1,3 +1,3 @@
 return {
-  -- require("plugins/misc/hardtime")
+  require("plugins/misc/hardtime")
 }

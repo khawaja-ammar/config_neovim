@@ -2,9 +2,6 @@ return {
   "folke/todo-comments.nvim",
   event = "VeryLazy",
   dependencies = { "nvim-lua/plenary.nvim" },
-  -- cmd = { "TodoTrouble", "TodoTelescope" },
-  -- event = "LazyFile",
-  -- config = true,
   config = function()
     require("todo-comments").setup()
     -- keys = {

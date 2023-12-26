@@ -1,6 +1,6 @@
+vim.opt.updatetime = 250
 vim.opt.timeout = true
 vim.opt.timeoutlen = 300
-vim.opt.updatetime = 250
 
 -- Appearance
 vim.opt.termguicolors = true

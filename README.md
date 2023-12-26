@@ -20,9 +20,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- obsidian nvim plugin??
 - lsp-zero
 - make find_files, git_files search case insensitive
-- Hardtime.nvim
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager) 
 - fugitive
 - undo tree OR telescope undo
