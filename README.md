@@ -20,6 +20,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- leap.nvim
 - obsidian nvim plugin??
 - lsp-zero
 - make find_files, git_files search case insensitive
