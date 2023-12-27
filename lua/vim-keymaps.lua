@@ -3,6 +3,12 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 -- Toggle wrap
 vim.keymap.set('n', '<A-z>', ':set wrap!<CR>', { noremap = true, silent = true })
 
+-- Tab and inverse tab
+vim.keymap.set('i', '<S-Tab>', '<C-d>', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<Tab>', '>>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-Tab>', '<<', { noremap = true, silent = true })
+
 -- Commands to switch neovim panes
 vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { noremap = true, silent = true })
