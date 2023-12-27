@@ -7,19 +7,34 @@ return {
     disable_mouse = "false",
     restriction_mode = "hint",
     restricted_keys = {
-      -- ["h"] = { "n", "x" },
-      -- ["j"] = { "n", "x" },
-      -- ["k"] = { "n", "x" },
-      -- ["l"] = { "n", "x" },
-      -- ["-"] = { "n", "x" },
-      -- ["+"] = { "n", "x" },
-      -- ["gj"] = { "n", "x" },
-      -- ["gk"] = { "n", "x" },
-      -- ["<CR>"] = { "n", "x" },
-      -- ["<C-M>"] = { "n", "x" },
-      -- ["<C-N>"] = { "n", "x" },
+      ["h"] = {},
+      ["j"] = {},
+      ["k"] = {},
+      ["l"] = {},
+      ["-"] = {},
+      ["+"] = {},
+      ["gj"] = {},
+      ["gk"] = {},
+      ["<CR>"] = {},
+      ["<C-M>"] = {},
+      ["<C-N>"] = {},
       ["<C-P>"] = {},
     },
+    -- hints = {
+    --   ["<Up>"] = {
+    --     message = function()
+    --       return "Use k instead of <Up>"
+    --     end,
+    --     length = 1,
+    --   },
+    --
+    --   ["<Down>"] = {
+    --     message = function()
+    --       return "Use j instead of <Down>"
+    --     end,
+    --     length = 1,
+    --   }
+    -- },
     disabled_keys = {
       ["<Up>"] = {},
       ["<Down>"] = {},
