@@ -20,6 +20,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- lspsage ?
 - leap.nvim
 - obsidian nvim plugin??
 - lsp-zero
