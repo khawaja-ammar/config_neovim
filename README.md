@@ -20,6 +20,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- cmp-cmdline / wildcards / wildmenu => autocomplete command line 
 - lspsage ?
 - leap.nvim
 - obsidian nvim plugin??

@@ -1,3 +1,10 @@
+-- return {
+--    require("mason")
+--    require('lsp')
+--    require('auto cmp')
+--    require('linters')
+--    require('formatters')
+-- }
 return {
   {
     -- LSP Configuration & Plugins
