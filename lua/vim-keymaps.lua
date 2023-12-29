@@ -15,6 +15,6 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', { noremap = true, silent = true })
 
--- TODO: 
+-- TODO:
 -- Add Alt + Up and Alt + Down to shift line and blocks
 -- Add shift + tab moves back 1 tab
