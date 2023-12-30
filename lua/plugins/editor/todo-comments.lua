@@ -1,9 +1,9 @@
 return {
-  "folke/todo-comments.nvim",
-  event = "VeryLazy",
-  dependencies = { "nvim-lua/plenary.nvim" },
+  'folke/todo-comments.nvim',
+  event = 'VeryLazy',
+  dependencies = { 'nvim-lua/plenary.nvim' },
   config = function()
-    require("todo-comments").setup()
+    require('todo-comments').setup()
     -- keys = {
     --   { "]t", function() require("todo-comments").jump_next() end, desc = "Next todo comment" },
     --   { "[t", function() require("todo-comments").jump_prev() end, desc = "Previous todo comment" },
@@ -12,6 +12,5 @@ return {
     --   -- { "<leader>st", "<cmd>TodoTelescope<cr>", desc = "Todo" },
     --   -- { "<leader>sT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<cr>", desc = "Todo/Fix/Fixme" },
     -- },
-  end
+  end,
 }
-

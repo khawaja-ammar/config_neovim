@@ -1,24 +1,24 @@
 return {
-  "m4xshen/hardtime.nvim",
-  event = "VeryLazy",
-  command = "Hardtime",
-  dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+  'm4xshen/hardtime.nvim',
+  event = 'VeryLazy',
+  command = 'Hardtime',
+  dependencies = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
   opts = {
-    disable_mouse = "false",
-    restriction_mode = "hint",
+    disable_mouse = 'false',
+    restriction_mode = 'hint',
     restricted_keys = {
-      ["h"] = {},
-      ["j"] = {},
-      ["k"] = {},
-      ["l"] = {},
-      ["-"] = {},
-      ["+"] = {},
-      ["gj"] = {},
-      ["gk"] = {},
-      ["<CR>"] = {},
-      ["<C-M>"] = {},
-      ["<C-N>"] = {},
-      ["<C-P>"] = {},
+      ['h'] = {},
+      ['j'] = {},
+      ['k'] = {},
+      ['l'] = {},
+      ['-'] = {},
+      ['+'] = {},
+      ['gj'] = {},
+      ['gk'] = {},
+      ['<CR>'] = {},
+      ['<C-M>'] = {},
+      ['<C-N>'] = {},
+      ['<C-P>'] = {},
     },
     -- hints = {
     --   ["<Up>"] = {
@@ -36,10 +36,10 @@ return {
     --   }
     -- },
     disabled_keys = {
-      ["<Up>"] = {},
-      ["<Down>"] = {},
-      ["<Left>"] = {},
-      ["<Right>"] = {},
+      ['<Up>'] = {},
+      ['<Down>'] = {},
+      ['<Left>'] = {},
+      ['<Right>'] = {},
     },
-  }
+  },
 }

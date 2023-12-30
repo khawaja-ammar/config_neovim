@@ -1,7 +1,7 @@
 return {
-  "kevinhwang91/nvim-ufo",
+  'kevinhwang91/nvim-ufo',
   dependencies = {
-    "kevinhwang91/promise-async"
+    'kevinhwang91/promise-async',
   },
   config = function()
     vim.o.foldcolumn = '1'
@@ -15,7 +15,7 @@ return {
     require('ufo').setup({
       provider_selector = function(bufnr, filetype, buftype)
         return { 'treesitter', 'indent' }
-      end
+      end,
     })
   end,
 }

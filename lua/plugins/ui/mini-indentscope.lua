@@ -1,14 +1,14 @@
 return {
-  "echasnovski/mini.indentscope",
+  'echasnovski/mini.indentscope',
   version = '*',
   config = function()
-    require("mini.indentscope").setup({
+    require('mini.indentscope').setup({
       draw = {
         delay = 0,
       },
-      symbol = "╎",
+      symbol = '╎',
       options = { try_as_border = true },
     })
     vim.b.miniindentscope_disable = true
-  end
+  end,
 }

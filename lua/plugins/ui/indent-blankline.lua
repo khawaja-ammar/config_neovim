@@ -1,13 +1,14 @@
 -- See `:help ibl`
 return {
-  "lukas-reineke/indent-blankline.nvim", main = "ibl",
+  'lukas-reineke/indent-blankline.nvim',
+  main = 'ibl',
   config = function()
-    require("ibl").setup({
+    require('ibl').setup({
       indent = {
-        char = "│",
-        tab_char = "│",
+        char = '│',
+        tab_char = '│',
       },
-      scope = { enabled = false }
+      scope = { enabled = false },
     })
-  end
+  end,
 }

@@ -1,13 +1,13 @@
 -- See `:help nvim-treesitter`
 return {
-  "nvim-treesitter/nvim-treesitter",
-  event = "VeryLazy",
-  build = ":TSUpdate",
+  'nvim-treesitter/nvim-treesitter',
+  event = 'VeryLazy',
+  build = ':TSUpdate',
   dependencies = {
     'nvim-treesitter/nvim-treesitter-textobjects',
   },
   config = function()
-    local config = require("nvim-treesitter.configs")
+    local config = require('nvim-treesitter.configs')
     config.setup({
       auto_install = true,
       highlight = { enable = true },
@@ -16,11 +16,11 @@ return {
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = "<C-space>",
-          node_incremental = "<C-space>",
+          init_selection = '<C-space>',
+          node_incremental = '<C-space>',
           scope_incremental = false,
-          node_decremental = "<bs>"
-        }
+          node_decremental = '<bs>',
+        },
       },
       textobjects = {
         select = {
@@ -67,5 +67,5 @@ return {
         },
       },
     })
-  end
+  end,
 }

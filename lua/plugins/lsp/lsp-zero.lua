@@ -1,7 +1,7 @@
 return {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
-  event = "VeryLazy",
+  event = 'VeryLazy',
   dependencies = {
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
@@ -11,7 +11,7 @@ return {
     { 'L3MON4D3/LuaSnip' },
   },
   config = function()
-    local lsp_zero = require("lsp-zero")
+    local lsp_zero = require('lsp-zero')
 
     lsp_zero.on_attach(function(_, bufnr)
       -- see :help lsp-zero-keybindings
@@ -19,27 +19,27 @@ return {
       lsp_zero.default_keymaps({ buffer = bufnr })
     end)
 
-    require("mason").setup({
+    require('mason').setup({
       ui = {
         icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗"
-        }
-      }
+          package_installed = '✓',
+          package_pending = '➜',
+          package_uninstalled = '✗',
+        },
+      },
     })
-    require("mason-lspconfig").setup({
+    require('mason-lspconfig').setup({
       ensure_installed = { 'lua_ls' },
       handlers = {
         lsp_zero.default_setup,
-      }
+      },
     })
 
     require('lspconfig').lua_ls.setup({
       Lua = {
         workspace = { checkThirdParty = false },
-        telemetry = { enable = false},
-      }
+        telemetry = { enable = false },
+      },
     })
-  end
+  end,
 }
