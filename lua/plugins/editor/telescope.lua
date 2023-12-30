@@ -33,6 +33,7 @@ return {
       vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject [S]earch (Grep) Telescope' })
 
       vim.keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
+      vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = '[G]it [S]tatus' })
 
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       -- vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = '[V]iew [H]elp' }) NOTE: This is an alt command
@@ -45,8 +46,7 @@ return {
       require("telescope").setup {
         extensions = {
           ["ui-select"] = {
-            require("telescope.themes").get_dropdown {
-            }
+            require("telescope.themes").get_dropdown{}
           }
         }
       }
