@@ -1,7 +1,8 @@
 return {
-   require('plugins/lsp/lspconfig'),
-   -- require('plugins/lsp/formatting-conform.nvim'),
-   -- require('plugins/lsp/linting-nvim-lint'),
+  -- require('plugins/lsp/lsp-zero'),
+  require('plugins/lsp/lspconfig'),
+  -- require('plugins/lsp/formatting-conform.nvim'),
+  -- require('plugins/lsp/linting-nvim-lint'),
 }
 
 
