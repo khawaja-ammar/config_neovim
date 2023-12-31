@@ -1,4 +1,5 @@
 -- TODO: add cmp-buffer
+-- cmp-cmdline / wildcards / wildmenu => autocomplete command line
 return {
   'hrsh7th/cmp-cmdline',
   event = 'VeryLazy',

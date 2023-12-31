@@ -25,6 +25,7 @@ return {
         'prettierd',
         'prettier',
         'black',
+        'isort',
         -- Linters
         'biome',
         'eslint_d',
@@ -35,7 +36,7 @@ return {
         'tsserver',
         'pyright',
       },
-      auto_update = true,
+      -- auto_update = true,
     })
     vim.api.nvim_command('MasonToolsUpdate')
   end,

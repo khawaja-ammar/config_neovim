@@ -28,7 +28,7 @@ return {
         javascriptreact = { { 'prettierd', 'prettier' } },
         typescriptreact = { { 'prettierd', 'prettier' } },
 
-        python = { 'black' },
+        python = { 'isort', 'black' },
       },
 
       vim.api.nvim_create_user_command('Format', function()

@@ -20,10 +20,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
-- cmp-cmdline / wildcards / wildmenu => autocomplete command line
+- nvim-ufo (folding lines/funcs)
 - lspsaga ?
 - leap.nvim
-- obsidian nvim plugin??
 - make find_files, git_files search case insensitive
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager)
 - fugitive
@@ -31,7 +30,6 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - Emoji picker
-- nvim-ufo (folding lines/funcs)
 - Explorer:
   - telescope file browser
   - ranger.nvim / rnvimr
