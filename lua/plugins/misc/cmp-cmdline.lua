@@ -1,3 +1,4 @@
+-- TODO: add cmp-buffer
 return {
   'hrsh7th/cmp-cmdline',
   event = 'VeryLazy',

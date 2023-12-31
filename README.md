@@ -21,25 +21,26 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Interesting Plugins
 
 - cmp-cmdline / wildcards / wildmenu => autocomplete command line
-- lspsage ?
+- lspsaga ?
 - leap.nvim
 - obsidian nvim plugin??
-- lsp-zero
 - make find_files, git_files search case insensitive
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager)
 - fugitive
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
-- in-vim terminal (C-``) for running server/debudding => Maybe tmux better?
+- in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - Emoji picker
 - nvim-ufo (folding lines/funcs)
 - Explorer:
   - telescope file browser
   - ranger.nvim / rnvimr
 
-## Vim Keys
+## Vim Marks
 
 - vim marks?? how do they function?
+
+## Vim Keys
 
 ### Normal Mode
 
