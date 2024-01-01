@@ -20,6 +20,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - nvim-ufo (folding lines/funcs)
 - lspsaga ?
 - leap.nvim
