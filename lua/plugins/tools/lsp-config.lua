@@ -63,14 +63,6 @@ return {
     --  If you want to override the default filetypes that your language server will attach to you can
     --  define the property 'filetypes' to the map in question.
     local servers = {
-      tailwindcss = {},
-      -- clangd = {},
-      -- gopls = {},
-      pyright = {},
-      -- rust_analyzer = {},
-      tsserver = {},
-      -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
@@ -79,6 +71,11 @@ return {
           -- diagnostics = { disable = { 'missing-fields' } },
         },
       },
+      -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+      astro = {},
+      tailwindcss = {},
+      tsserver = {},
+      pyright = {},
     }
 
     -- Setup neovim lua configuration

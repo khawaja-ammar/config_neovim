@@ -35,6 +35,7 @@ return {
         'tailwindcss',
         'tsserver',
         'pyright',
+        'astro',
       },
       -- auto_update = true,
     })

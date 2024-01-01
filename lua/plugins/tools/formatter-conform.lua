@@ -10,7 +10,7 @@ return {
         bash = { 'beautysh' },
         zsh = { 'beautysh' },
 
-        sql = { 'sql-formatter' },
+        sql = { 'sql_formatter' },
 
         json = { { 'prettierd', 'prettier' } },
         graphql = { { 'prettierd', 'prettier' } },
@@ -19,19 +19,34 @@ return {
 
         css = { { 'prettierd', 'prettier' } },
         scss = { { 'prettierd', 'prettier' } },
-
         -- GPPLs
         lua = { 'stylua' },
 
         javascript = { { 'prettierd', 'prettier' } },
         typescript = { { 'prettierd', 'prettier' } },
-        javascriptreact = { { 'prettierd', 'prettier' } },
-        typescriptreact = { { 'prettierd', 'prettier' } },
 
         python = { 'isort', 'black' },
+        -- DSLs embedded with GPPLs
+        javascriptreact = { { 'prettierd', 'prettier' } },
+        typescriptreact = { { 'prettierd', 'prettier' } },
+        astro = { { 'prettierd', 'prettier' } },
       },
 
-      vim.api.nvim_create_user_command('Format', function()
+      formatters = {
+        sql_formatter = {
+          command = 'sql-formatter',
+          args = {
+            '-l',
+            'postgresql',
+          },
+          -- args = {
+          -- '-c',
+          -- '~/.config/nvim/config_tools/config_formatters/sql.json',
+          -- },
+        },
+      },
+
+      vim.api.nvim_create_user_command('ConformFormat', function()
         require('conform').format({
           lsp_fallback = true,
           async = false,
