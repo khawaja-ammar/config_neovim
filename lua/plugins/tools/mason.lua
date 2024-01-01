@@ -31,11 +31,14 @@ return {
         'eslint_d',
         'pylint',
         -- LSP
-        'lua_ls',
+        'sqls',
         'tailwindcss',
+
+        'astro',
+
+        'lua_ls',
         'tsserver',
         'pyright',
-        'astro',
       },
       -- auto_update = true,
     })
