@@ -2,6 +2,8 @@ return {
   'stevearc/conform.nvim',
   event = 'VeryLazy',
   config = function()
+    local config_formatters_path = os.getenv('HOME') .. '/.config/nvim/config_tools/config_formatters/'
+
     require('conform').setup({
       formatters_by_ft = {
         -- DSLs
@@ -36,13 +38,9 @@ return {
         sql_formatter = {
           command = 'sql-formatter',
           args = {
-            '-l',
-            'postgresql',
+            '-c',
+            (config_formatters_path .. 'sql.json'),
           },
-          -- args = {
-          -- '-c',
-          -- '~/.config/nvim/config_tools/config_formatters/sql.json',
-          -- },
         },
       },
 
