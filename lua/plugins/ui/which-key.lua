@@ -1,3 +1,7 @@
+-- Hierarchy
+-- Project level search
+-- File level search
+
 return {
   'folke/which-key.nvim',
   event = 'VeryLazy',
