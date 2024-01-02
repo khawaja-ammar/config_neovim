@@ -20,10 +20,10 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
-- SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - nvim-ufo (folding lines/funcs)
+- SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - lspsaga ?
-- leap.nvim
+- leap.nvim, flash.nvim
 - make find_files, git_files search case insensitive
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager)
 - fugitive
@@ -32,7 +32,6 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - Emoji picker
 - Explorer:
-  - telescope file browser
   - ranger.nvim / rnvimr
 
 ## Vim Marks
@@ -132,7 +131,8 @@ Ex - Open vim explorer
 
 ### Search Mode
 
-/ - Search
+/ - Search for pattern
+? - Search backwards for pattern
 
 ## Custom Keybinds
 

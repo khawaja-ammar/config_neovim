@@ -27,7 +27,7 @@ return {
         'black',
         'isort',
         -- Linters
-        'biome',
+        -- 'biome',
         'eslint_d',
         'pylint',
         -- LSP
