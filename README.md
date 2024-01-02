@@ -74,6 +74,9 @@ T{c}-
 gg - go to the first line of the document
 G - go to the last line of the document
 
+C-u - move cursor + screen [U]p half page
+C-d - move cursor + screen [D]own half page
+
 % - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)
 
 **OPS**

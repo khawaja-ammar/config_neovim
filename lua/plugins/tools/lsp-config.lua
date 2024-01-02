@@ -66,7 +66,7 @@ return {
       astro = {},
       tailwindcss = {},
 
-      sqls = {},
+      -- sqls = {},
 
       lua_ls = {
         Lua = {

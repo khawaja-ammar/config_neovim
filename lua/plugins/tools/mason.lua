@@ -31,7 +31,7 @@ return {
         'eslint_d',
         'pylint',
         -- LSP
-        'sqls',
+        -- 'sqls',
         'tailwindcss',
 
         'astro',
