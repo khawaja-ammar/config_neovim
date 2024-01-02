@@ -34,8 +34,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - Explorer:
   - ranger.nvim / rnvimr
 
-## Vim Marks
+## Vim Features??
 
+- vim quick fix list??
 - vim marks?? how do they function?
 
 ## Vim Keys

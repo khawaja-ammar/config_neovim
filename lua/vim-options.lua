@@ -2,6 +2,10 @@ vim.opt.updatetime = 250
 vim.opt.timeout = true
 vim.opt.timeoutlen = 300
 
+vim.opt.wildmenu = true
+vim.opt.wildoptions = 'fuzzy'
+vim.opt.wildmode = 'list:longest,full'
+
 -- Appearance
 vim.opt.termguicolors = true
 vim.opt.nu = true

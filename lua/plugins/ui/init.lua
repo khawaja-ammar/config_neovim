@@ -5,5 +5,4 @@ return {
   require('plugins/ui/which-key'),
   require('plugins/ui/lualine'),
   require('plugins/ui/noice'),
-  require('plugins/ui/cmp-cmdline'),
 }
