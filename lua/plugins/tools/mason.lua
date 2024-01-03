@@ -16,7 +16,6 @@ return {
     })
 
     require('mason-tool-installer').setup({
-      run_on_start = true,
       ensure_installed = {
         -- Formatters
         'beautysh',
@@ -41,7 +40,6 @@ return {
         'pyright',
         'gopls',
       },
-      -- auto_update = true,
     })
     vim.api.nvim_command('MasonToolsUpdate')
   end,
