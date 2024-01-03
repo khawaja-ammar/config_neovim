@@ -1,4 +1,6 @@
 return {
+  require('plugins/ui/neoscroll'),
+
   require('plugins/ui/indent-blankline'),
   require('plugins/ui/mini-indentscope'),
 

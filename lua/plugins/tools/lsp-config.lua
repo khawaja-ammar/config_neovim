@@ -60,8 +60,6 @@ return {
       astro = {},
       tailwindcss = {},
 
-      -- sqls = {},
-
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
@@ -73,6 +71,7 @@ return {
       -- html = { filetypes = { 'html', 'twig', 'hbs'} },
       tsserver = {},
       pyright = {},
+      gopls = {},
     }
 
     -- Setup neovim lua configuration

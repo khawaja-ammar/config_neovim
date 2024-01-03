@@ -39,6 +39,7 @@ return {
         'lua_ls',
         'tsserver',
         'pyright',
+        'gopls',
       },
       -- auto_update = true,
     })
