@@ -9,6 +9,5 @@ return {
       symbol = '╎',
       options = { try_as_border = true },
     })
-    vim.b.miniindentscope_disable = true
   end,
 }
