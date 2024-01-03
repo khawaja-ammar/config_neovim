@@ -29,6 +29,17 @@ return {
 
       -- See `:help telescope.builtin`
       local builtin = require('telescope.builtin')
+
+      vim.keymap.set('n', '<leader>?', builtin.oldfiles, { desc = '[?] Find recently opened files' })
+      vim.keymap.set('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find existing buffers' })
+      vim.keymap.set('n', '<leader>/', function()
+        -- You can pass additional configuration to telescope to change theme, layout, etc.
+        builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({
+          winblend = 10,
+          previewer = false,
+        }))
+      end, { desc = '[/] Fuzzily search in current buffer' })
+
       vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Project Files' })
       vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = '[P]roject [F]iles Telescope' })
       vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject [S]earch (Grep) Telescope' })
