@@ -10,13 +10,16 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Plugin Classifications
 
-- UI
+- Treesitter
 - Editor
+
+- UI
+
 - Coding
+- LSP
+
 - Formatting
 - Linting
-- LSP
-- Treesitter
 
 ## Interesting Plugins
 
@@ -25,14 +28,14 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - lspsaga ?
 - leap.nvim, flash.nvim
 - make find_files, git_files search case insensitive
-- Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager)
+- Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager) <!-- Maybe ? -->
 - fugitive
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - Emoji picker
 - Explorer:
-  - ranger.nvim / rnvimr
+  - ranger.nvim / rnvimr, telescope file explorer
 
 ## Vim Features??
 

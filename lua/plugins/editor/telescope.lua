@@ -49,6 +49,7 @@ return {
 
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       -- vim.keymap.set('n', '<leader>vh', builtin.help_tags, { desc = '[V]iew [H]elp' }) This is an alt command
+      vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
     end,
   },
   {
