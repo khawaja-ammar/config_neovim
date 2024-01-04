@@ -23,7 +23,7 @@ return {
         vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
       end
 
-      nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+      -- nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
       nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
       nmap('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
@@ -47,6 +47,7 @@ return {
 
       -- Custom Keymaps (outside of Kickstart.nvim)
       nmap('gt', require('telescope.builtin').lsp_type_definitions, '[T]ype Definition')
+      nmap('<leader>r', vim.lsp.buf.rename, '[R]ename')
     end
 
     require('mason-lspconfig').setup()

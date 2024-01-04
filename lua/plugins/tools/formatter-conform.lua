@@ -44,11 +44,11 @@ return {
         },
       },
 
-      vim.api.nvim_create_user_command('ConformFormat', function()
+      vim.api.nvim_create_user_command('Format', function()
         require('conform').format({
-          lsp_fallback = true,
-          async = false,
           timeout_ms = 500,
+          async = false,
+          lsp_fallback = true,
         })
       end, { desc = 'Format current buffer' }),
 
