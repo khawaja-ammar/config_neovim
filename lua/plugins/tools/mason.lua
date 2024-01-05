@@ -18,18 +18,6 @@ return {
     require('mason-tool-installer').setup({
       auto_update = true,
       ensure_installed = {
-        -- Formatters
-        'beautysh',
-        'sql-formatter',
-        'stylua',
-        'prettierd',
-        'prettier',
-        'black',
-        'isort',
-        -- Linters
-        -- 'biome',
-        'eslint_d',
-        'pylint',
         -- LSP
         -- 'sqls',
         'tailwindcss',
@@ -40,6 +28,22 @@ return {
         'tsserver',
         'pyright',
         'gopls',
+
+        -- Formatters + Linters
+        'biome',
+
+        -- Formatters
+        'beautysh',
+        'sql-formatter',
+        'stylua',
+        'prettierd',
+        'prettier',
+        'black',
+        'isort',
+
+        -- Linters
+        'eslint_d',
+        'pylint',
       },
     })
     vim.api.nvim_command('MasonToolsUpdate')

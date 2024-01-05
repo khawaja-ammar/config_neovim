@@ -2,7 +2,7 @@
 
 Basic neovim config experimenting with different plugins using lazy plugin manager
 
-## External Tools recommeded
+## External Tools recommended
 
 - ripgrep
 - fs
@@ -10,28 +10,30 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Plugin Classifications
 
-- Treesitter
 - Editor
+
+  - Treesitter
 
 - UI
 
 - Coding
-- LSP
+
+  - LSP
 
 - Formatting
 - Linting
 
 ## Interesting Plugins
 
-- in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
+- in-vim terminal (C-``) for running server/debugging => Maybe **tmux** better?
 - nvim-ufo (folding lines/funcs)
+
 - vim-fugtive + vim-rhubarb + vim-sleuth
 - SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - lspsaga ?
 - leap.nvim, flash.nvim
 - make find_files, git_files search case insensitive
 - Add \<leader>q to close current buffer and open the explorer (:Ex OR whatever file manager) <!-- Maybe ? -->
-- fugitive
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
 - Emoji picker
@@ -41,7 +43,18 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Vim Features??
 
 - vim quick fix list??
-- vim marks?? how do they function?
+- vim marks?? How do they function?
+
+### Spell
+
+Spellchecking
+
+- zg (add good word)
+- zw (add wrong word)
+
+To make vim spell file from spell.add file
+
+- mkspell % (inside that file)
 
 ## Vim Keys
 

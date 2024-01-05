@@ -51,5 +51,6 @@ vim.opt.isfname:append('@-@')
 
 vim.opt.scrolloff = 8
 
+-- Spell Checker
 vim.opt.spell = true
 vim.opt.spelloptions = 'camel'
