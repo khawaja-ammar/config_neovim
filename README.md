@@ -23,7 +23,9 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Interesting Plugins
 
+- in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - nvim-ufo (folding lines/funcs)
+- vim-fugtive + vim-rhubarb + vim-sleuth
 - SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - lspsaga ?
 - leap.nvim, flash.nvim
@@ -32,7 +34,6 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - fugitive
 - undo tree OR telescope undo
 - harpoon (bookmark pages) => (C-Tab, C-Shift-Tab to traverse + other cmds)
-- in-vim terminal (C-``) for running server/debudding => Maybe **tmux** better?
 - Emoji picker
 - Explorer:
   - ranger.nvim / rnvimr, telescope file explorer

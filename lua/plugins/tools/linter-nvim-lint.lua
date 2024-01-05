@@ -5,8 +5,6 @@ return {
     local lint = require('lint')
 
     lint.linters_by_ft = {
-      -- ['*'] = { 'cspell' },
-
       javascript = { 'eslint_d' },
       typescript = { 'eslint_d' },
       javascriptreact = { 'eslint_d' },
@@ -28,12 +26,13 @@ return {
       lint.try_lint()
     end, { desc = 'Trigger linting for current file' })
 
-    -- vim.api.nvim_create_user_command('LintList', function()
-    --   local linters = require('lint').get_running()
-    --   if #linters == 0 then
-    --     return '󰦕'
-    --   end
-    --   return '󱉶 ' .. table.concat(linters, ', ')
-    -- end, { desc = 'List available linter for buffer' })
+    vim.api.nvim_create_user_command('LintInfo', function()
+      local linters = require('lint').get_running()
+      if #linters == 0 then
+        print('✗ nvim-lint: NO LINTERS RUNNING')
+      else
+        print('✓ nvim-lint:' .. table.concat(linters, ', '))
+      end
+    end, { desc = 'List available linter for buffer' })
   end,
 }
