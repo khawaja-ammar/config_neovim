@@ -50,3 +50,6 @@ vim.opt.isfname:append('@-@')
 -- vim.opt.iskeyword:append("-")
 
 vim.opt.scrolloff = 8
+
+vim.opt.spell = true
+vim.opt.spelloptions = 'camel'
