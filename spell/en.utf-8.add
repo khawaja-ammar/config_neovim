@@ -8,3 +8,4 @@ config
 ripgrep
 tmux
 Treesitter
+astro

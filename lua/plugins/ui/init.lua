@@ -1,10 +1,8 @@
 return {
-  require('plugins/ui/neoscroll'),
-
-  require('plugins/ui/indent-blankline'),
-  require('plugins/ui/mini-indentscope'),
-
-  require('plugins/ui/which-key'),
-  require('plugins/ui/lualine'),
-  require('plugins/ui/noice'),
+  require('plugins.ui.neo-tree'),
+  require('plugins.ui.telescope'),
+  require('plugins.ui.which-key'),
+  require('plugins.ui.lualine'),
+  require('plugins.ui.noice'),
+  require('plugins.ui.lazygit'),
 }

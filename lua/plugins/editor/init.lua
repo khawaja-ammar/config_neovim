@@ -1,7 +1,8 @@
 return {
-  require('plugins/editor/telescope'),
-  require('plugins/editor/neo-tree'),
-  require('plugins/editor/todo-comments'),
-  -- require("plugins/editor/fold_nvim-ufo")
-  -- require("plugins/editor/harpoon"),
+  require('plugins.editor.treesitter'),
+  require('plugins.editor.indent-blankline'),
+  require('plugins.editor.mini-indentscope'),
+  require('plugins.editor.gitsigns'),
+  require('plugins.editor.todo-comments'),
+  -- require("plugins.editor.fold_nvim-ufo")
 }

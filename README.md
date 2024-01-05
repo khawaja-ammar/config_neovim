@@ -10,24 +10,26 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 
 ## Plugin Classifications
 
-- Editor
+- Themes
 
-  - Treesitter
+- Editor
 
 - UI
 
 - Coding
 
+- Tools
   - LSP
-
-- Formatting
-- Linting
+  - Formatting
+  - Linting
+  - DAP
 
 ## Interesting Plugins
 
 - in-vim terminal (C-``) for running server/debugging => Maybe **tmux** better?
 - nvim-ufo (folding lines/funcs)
 
+- DAP
 - vim-fugtive + vim-rhubarb + vim-sleuth
 - SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - lspsaga ?
