@@ -5,19 +5,14 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## External Tools recommended
 
 - ripgrep
-- fs
 - tmux?
 
 ## Plugin Classifications
 
 - Themes
-
 - Editor
-
 - UI
-
 - Coding
-
 - Tools
   - LSP
   - Formatting
@@ -27,7 +22,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Interesting Plugins
 
 - in-vim terminal (C-``) for running server/debugging => Maybe **tmux** better?
-- nvim-ufo (folding lines/funcs)
+- nvim-ufo (folding lines/func)
 
 - DAP
 - vim-fugtive + vim-rhubarb + vim-sleuth
@@ -53,6 +48,11 @@ Spellchecking
 
 - zg (add good word)
 - zw (add wrong word)
+
+Navigate to spelling mistake
+
+- ]s
+- [s
 
 To make vim spell file from spell.add file
 

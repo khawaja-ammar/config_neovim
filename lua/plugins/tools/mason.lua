@@ -30,7 +30,7 @@ return {
         'gopls',
 
         -- Formatters + Linters
-        'biome',
+        -- 'biome',
 
         -- Formatters
         'beautysh',
