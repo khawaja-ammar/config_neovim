@@ -23,17 +23,15 @@ local lazy_opts = {
   checker = {
     enabled = true,
   },
-  rtp = {
-    disabled_plugins = {
-      'gzip',
-      'matchit',
-      'matchparen',
-      'netrw',
-      'netrwPlugin',
-      'tarPlugin',
-      'tohtml',
-      'tutor',
-      'zipPlugin',
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        'gzip',
+        'tarPlugin',
+        'tohtml',
+        'tutor',
+        'zipPlugin',
+      },
     },
   },
 }
