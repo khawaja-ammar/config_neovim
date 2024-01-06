@@ -16,6 +16,8 @@ return {
     })
 
     require('mason-tool-installer').setup({
+      start_delay = 3000, -- 3 second delay
+      run_on_start = true,
       auto_update = true,
       ensure_installed = {
         -- LSP

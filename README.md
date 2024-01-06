@@ -25,6 +25,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 - nvim-ufo (folding lines/func)
 
 - DAP
+- add sourcegraph's cody(sg.nvim)
 - vim-fugtive + vim-rhubarb + vim-sleuth
 - SQL Built in?? => vim-dadbod, vim-dadbod-ui, vim-dadbod-comp
 - lspsaga ?
