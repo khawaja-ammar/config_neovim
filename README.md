@@ -22,6 +22,7 @@ Basic neovim config experimenting with different plugins using lazy plugin manag
 ## Interesting Plugins
 
 - in-vim terminal (C-``) for running server/debugging => Maybe **tmux** better?
+- session manager
 - nvim-ufo (folding lines/func)
 
 - DAP
